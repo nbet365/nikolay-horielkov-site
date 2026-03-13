@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Nikolay Horielkov</title>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Georgia, serif;
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+/* звездный фон */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+radial-gradient(white 1px, transparent 1px),
+radial-gradient(white 1px, transparent 1px);
+background-size:40px 40px,80px 80px;
+background-position:0 0,20px 20px;
+opacity:0.07;
+z-index:-1;
+}
+
+/* меню */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.7);
+padding:18px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+margin:0 25px;
+text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+color:#ffd700;
+}
+
+/* главный экран */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.85)),
+url("author.jpg") center/cover no-repeat;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:72px;
+padding:40px 90px;
+background:rgba(0,0,0,0.5);
+border-radius:12px;
+}
+
+/* книги */
+
+.books{
+padding:120px 40px;
+text-align:center;
+}
+
+.books h2{
+font-size:46px;
+margin-bottom:80px;
+}
+
+.book-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:70px;
+}
+
+.book{
+text-align:center;
+}
+
+.book img{
+width:260px;
+border-radius:12px;
+transition:0.5s;
+box-shadow:0 15px 35px rgba(0,0,0,0.7);
+}
+
+.book img:hover{
+transform:rotateY(-10deg) scale(1.1) translateY(-15px);
+box-shadow:0 25px 60px rgba(255,215,0,0.35);
+}
+
+/* кнопки */
+
+.button{
+display:inline-block;
+margin-top:14px;
+padding:10px 26px;
+background:#ffd700;
+color:black;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+.button:hover{
+background:#fff1a6;
+}
+
+/* about */
+
+.about{
+padding:120px 40px;
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.about h2{
+font-size:44px;
+margin-bottom:30px;
+}
+
+.about p{
+font-size:20px;
+line-height:1.7;
+color:#ddd;
+}
+
+/* contact */
+
+.contact{
+padding:120px 40px;
+text-align:center;
+background:#111;
+}
+
+.contact h2{
+font-size:40px;
+}
+
+.contact a{
+color:#ffd700;
+font-size:22px;
+text-decoration:none;
+}
+
+/* footer */
+
+footer{
+padding:35px;
+text-align:center;
+color:#777;
+background:black;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#books">Books</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<div class="hero">
+
+<h1>Nikolay Horielkov</h1>
+
+</div>
+
+<section id="books" class="books">
+
+<h2>My Books</h2>
+
+<div class="book-grid">
+
+<div class="book">
+<img src="girl-he-hid.jpg">
+<h3>The Girl He Hid</h3>
+<a class="button" href="mailto:ngorelkov@gmail.com">Coming Soon</a>
+</div>
+
+<div class="book">
+<img src="betrayal-heart.jpg">
+<h3>The Betrayal of the Heart</h3>
+<a class="button" href="mailto:ngorelkov@gmail.com">Coming Soon</a>
+</div>
+
+<div class="book">
+<img src="fatal-choice.jpg">
+<h3>A Fatal Choice</h3>
+<a class="button" href="mailto:ngorelkov@gmail.com">Coming Soon</a>
+</div>
+
+<div class="book">
+<img src="she-is-unfree.jpg">
+<h3>She is Unfree</h3>
+<a class="button" href="mailto:ngorelkov@gmail.com">Coming Soon</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="about">
+
+<h2>About the Author</h2>
+
+<p>
+Nikolay Horielkov writes emotionally intense romantic suspense novels exploring love, betrayal, passion, and life-changing choices.
+</p>
+
+<p>
+His stories immerse readers in dramatic relationships and powerful emotional journeys where every decision can change everything.
+</p>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<a href="mailto:ngorelkov@gmail.com">ngorelkov@gmail.com</a>
+
+</section>
+
+<footer>
+
+© 2026 Nikolay Horielkov
+
+</footer>
+
+</body>
+
+</html>
